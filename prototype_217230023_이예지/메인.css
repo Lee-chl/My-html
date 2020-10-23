@@ -1,0 +1,9 @@
+@font-face { 
+    font-family: '210 Chungchunsidae R'; src: url(fonts/210 Chungchunsidae R.ttf) format('truetype'); } 
+body { font-family: 210 Chungchunsidae R; }
+.navi {background-color: #333333; height:47px;
+ width:100%; z-index: 16000;}
+.navi a{color: white; text-decoration: none; display: inline-block; margin: 0 10px;}
+.navi a:hover {color:red;}
+.navi .nav nav-tabs {position: relative; top:8px; margin:0 auto;}
+.right { float: right; }

@@ -1,0 +1,34 @@
+﻿<html>
+<body id="signup">
+<form>
+<fieldset>
+<legend> 회원가입</legend>
+<span> 사용자 아이디</span>
+<input id="username2" type="text"/>
+<input id="dup_check" type="button" value="중복체크" disabled/><br/>
+<span>비밀번호</span> <input id="pass1" type="password"><br/>
+<span>비밀번호 확인</span> <input id="pass2" type="password"><br/>
+<span>이름</span> <input type="text"><br/>
+<span>전화번호</span><input type="tel"><br/>
+<span>이메일</span><input type="email"><br/>
+<span>생일</span><input type="date"><br/>
+<span>성별 </span> <label for="male"> 남성
+                           <input type="radio" name="sex" id="male" value="male">
+                           <label for="female">여성
+                           <input type="radio" name="sex" id="female" value="female"> <br/>
+<span>연령대</span>
+<select>
+       <option> 10대</option>
+       <option> 20대</option>
+       <option> 30대</option>
+       <option> 40대</option>
+       <option> 50대이상</option>
+ </select><br/>
+ 간단한 자기소개<br/>
+ <textarea clos="30" rows="5"> 간단한 자기소개를 써 주세요.</textarea>
+ </fieldset>
+ <input id="signup_button" type="submit" value="회원가입" disabled/>
+ <input id="reset2" type="button" value="취소" disabled/>
+ </form>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
+		<title>패키지</title>
+
+       <style>
+            .div12 {display: inline-block; width: 45%;}
+            .div12>a>img {width:100%}
+           #stv_list{top: 270px; right:5px; }
+          
+			 .ph {
+					  display: inline-block;
+					  width: 1200px;
+					  height: 100px;
+					  margin: 1em;
+					}
+			 .ff {
+					  display: inline-block;
+					  width: 200px;
+					  height: 100px;
+					  margin: 1em;
+					}
+           .stse {{width:50px; 
+                  height: 50px;
+           }
+ 
+                   
+                   
+        </style>
+        <img src="%EB%A1%9C%EA%B3%A0%EC%95%A4%EB%93%9C%20%EC%9D%B4%EB%A6%84.jpg" />
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="product1.css" type="text/css"/>
+        <span class="right" style="padding:50px 10px;">
+        <a href="로그인.html" target="_blank"> 로그인</a>    
+        <a href="회원가입.html" target="_blank"> 회원가입</a>
+        </span>
+    </head>
+    
+    <body>
+        <!-- Nav -->
+		<div class="pl">
+         <ul class="nav nav-tabs">
+           <li role="presentation"  ><a href="메인.html">메인</a></li>
+            <li role="presentation" class="active"><a href="product1.html">패키지</a></li>
+            <li role="presentation"><a href="product2.html">특별 패키지</a></li>
+            <li role="presentation"><a href="company.html">회사소개</a></li>
+            <li role="presentation"><a href="community.html">커뮤니티</a></li>
+            <li role="presentation"><a href="event.html">이벤트</a></li>
+        </ul>
+		</div>
+        
+		<div class="ph">
+		<br>
+        <h1>패키지</h1>
+		<br>
+		<br>
+		<br>
+        <div class="mylist">
+         <div class="div12"><a href="#"><img src="%EB%82%98%EB%AC%BC.png" /></a></div><div class="div12"><a href="#"><img src="%EA%B3%A0%EA%B8%B0.png" /></a></div><div class="div12"><a href="#"><img src="%EB%82%98%EA%B3%A0.png" /></a></div> 
+			
+		</div>
+         
+         <div id="stv_list"> <img src="%EC%98%86%20%EB%A9%94%EB%89%B44.png" /> </div>
+    </div>
+<div class="ff">
+<script>
+      
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop(); // 현재 스크롤바의 위치값을 반환합니다.
+ 
+    /*사용자 설정 값 시작*/
+    var speed          = 1000;     // 따라다닐 속도 : "slow", "normal", or "fast" or numeric(단위:msec)
+    var easing         = 'linear'; // 따라다니는 방법 기본 두가지 linear, swing
+    var $layer         = $('#stv_list'); // 레이어 셀렉팅
+    var layerTopOffset = 0;   // 레이어 높이 상한선, 단위:px
+    $layer.css('position', 'absolute');
+    /*사용자 설정 값 끝*/
+ 
+    // 스크롤 바를 내린 상태에서 리프레시 했을 경우를 위해
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+ 
+    //스크롤이벤트가 발생하면
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 123;
+        if (yPosition < 100)
+        {
+            yPosition = 100;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+    
+    
+    
+</script>
+</div>
+        
+        
+        <!-- jquery js -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        
+        <!-- bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+  <div>
+  <br>
+  <br>
+  <br>
+<br>
+ <br>
+  <br>
+  <br>
+  <br>
+<br>
+ <br>
+     <br>
+  <br>
+  <br>
+<br>
+ <br>
+       <br>
+  <br>
+  <br>
+<br>
+ <br>
+       <br>
+      <br>
+  <br>
+<br>
+ <br>
+       <br>
+
+  </div>      
+
+            <div class="stse">
+                <p> <img src="%ED%95%98%EB%8B%A8.jpg" > </p>
+            </div>
+
+    </body>
+</html>
