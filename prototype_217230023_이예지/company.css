@@ -1,0 +1,11 @@
+.aaa {float:right;}
+.aaa a{line-height: 75px; padding: 0 15px;}
+@font-face { 
+    font-family: '210 Chungchunsidae R'; src: url(fonts/210 Chungchunsidae R.ttf) format('truetype'); } 
+body { font-family: 210 Chungchunsidae R; }
+.cl {background-color: #333333; height:47px;
+ width:100%; z-index: 16000;}
+.cl a{color: white; text-decoration: none; display: inline-block; margin: 0 10px;}
+.cl a:hover {color:red;}
+.cl .nav nav-tabs {position: relative; top:8px; margin:0 auto;}
+.right { float: right; }
