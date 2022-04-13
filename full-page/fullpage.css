@@ -1,0 +1,29 @@
+.section{
+    color:white;
+}
+
+h1{
+    margin-top:0px;
+    height:900px;
+    text-align:center;
+
+}
+
+.content1{
+    background-image: url('./mainImage.jpg');
+    background-size: cover;
+}
+
+#fp-nav{
+    width:70px;
+}
+
+#fp-nav ul li a span{
+    background-color: #fff;
+}
+
+/* 화살표 css */
+/* .fp-arrow{
+    top:400px;
+} */
+

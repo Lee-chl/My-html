@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>FullPage</title>
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.5/fullpage.min.css"/>
+        <!-- <link rel="stylesheet" href="./fullpage.min.css" /> -->
+        <link rel="stylesheet" href="./fullpage.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.5/fullpage.min.js"></script>
+        <!-- <script src="./fullpage.min.js"></script> -->
+    </head>
+
+<body>
+    <div id="full-page">
+        <div class="section content1">
+            <h1 style="width:100px;">Main</h1>
+        </div>
+        <div class="section" >
+            <div class="slide">
+                <h1 style="width:120px;">About</h1>
+            </div>
+            <div class="slide">
+                <h1>info</h1>
+            </div>
+        </div>
+        <div class="section">
+            <h1 style="width:140px;">Contact</h1>
+        </div>
+        <div class="section">
+            <h1 style="width:70px;" >Ect</h1>
+        </div>
+    </div>
+
+
+
+    <script>
+        new fullpage('#full-page',{
+            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+            //뒷 배경 
+            sectionsColor:['#F79F81','#A9F5BC','#F6CEE3','#81F7D8'],
+            //네비게이션 
+            navigation:true,
+            //네비게이션 section별로 이름 
+            navigationTooltips:['Home','About','contact','ect'],
+            autoScrolling:true,
+            //스크롤 내려가는 시간 
+            scrollingSpeed: 1000,
+            scrollHorizontally: true
+        })
+    </script>
+
+</body>
+</html>
